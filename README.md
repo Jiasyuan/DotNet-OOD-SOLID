@@ -1,4 +1,4 @@
-# SOLID Principles Of  Object-Oriented Design in C#
+# SOLID Principles Of  Object-Oriented Design in C#.Net
 SOLID Principles Of  Object-Oriented Design
 
 ## Table of Contents  
@@ -21,4 +21,4 @@ SOLID Principles Of  Object-Oriented Design
 	> 被抽象化的東西，可以有多樣表現  
 	
 <a name="CohesionandCoupling"></a>
-## 內聚力與耦合力
+## 內聚力與耦合力  
