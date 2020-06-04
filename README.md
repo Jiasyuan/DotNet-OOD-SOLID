@@ -3,10 +3,9 @@ SOLID Principles Of  Object-Oriented Design
 
 ## Table of Contents  
 + [ OOP 四個特性 ](#oop4pillars)  
-
++ [內聚力與耦合力](#CohesionandCoupling)
 
 <a name="oop4pillars"></a>
-oop four pillars
 ## OOP 四個特性  
 + 抽象(Abstraction)	
 	+ 將真實世界的需求(物件)轉為程式中的類別
@@ -19,4 +18,7 @@ oop four pillars
 + 多型(Polymorphism)
 	+ 在相同介面下，可用不同類別實現
 	+ 多型有分成多種不同類型
-	> 被抽象化的東西，可以有多樣表現
+	> 被抽象化的東西，可以有多樣表現  
+	
+<a name="CohesionandCoupling"></a>
+## 內聚力與耦合力
