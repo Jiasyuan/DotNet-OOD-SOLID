@@ -3,8 +3,13 @@ SOLID Principles Of  Object-Oriented Design
 
 ## Table of Contents  
 + [ OOP 四個特性 ](#oop4pillars)  
-+ [內聚力與耦合力](#CohesionandCoupling)
-+ [SOLID 物件導向設計原則](#SOLIDPrinciplesOOD)
++ [內聚力與耦合力](#CohesionandCoupling)  
++ [SOLID 物件導向設計原則](#SOLIDPrinciplesOOD)  
++ [單一功能原則(SRP)](#SRP)  
++ [開放封閉原則(OCP)](#OCP)  
++ [里氏替換原則(LSP)](#LSP)  
++ [介面隔離原則(ISP)](#ISP)
++ [相依反轉原則(DIP)](#DIP)
 
 <a name="oop4pillars"></a>
 ## OOP 四個特性  
@@ -35,3 +40,18 @@ SOLID Principles Of  Object-Oriented Design
 + 里氏替換原則(Liskov Substitution Principle)  
 + 介面隔離原則(Interface-Segregation Principles)  
 + 相依反轉原則(Dependency inversion Principle)
+
+<a name="SRP"></a>
+## 單一功能原則(SRP)
+
+<a name="OCP"></a>
+## 開放封閉原則(OCP)  
+
+<a name="LSP"></a>
+## 里氏替換原則(LSP)
+
+<a name="ISP"></a>
+## 介面隔離原則(ISP)  
+
+<a name="DIP"></a>
+## 相依反轉原則(DIP)  
