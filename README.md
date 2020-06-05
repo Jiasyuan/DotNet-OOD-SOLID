@@ -4,6 +4,7 @@ SOLID Principles Of  Object-Oriented Design
 ## Table of Contents  
 + [ OOP 四個特性 ](#oop4pillars)  
 + [內聚力與耦合力](#CohesionandCoupling)
++ [SOLID 物件導向設計原則](#SOLIDPrinciplesOOD)
 
 <a name="oop4pillars"></a>
 ## OOP 四個特性  
@@ -21,4 +22,16 @@ SOLID Principles Of  Object-Oriented Design
 	> 被抽象化的東西，可以有多樣表現  
 	
 <a name="CohesionandCoupling"></a>
-## 內聚力與耦合力  
+## 內聚力與耦合力    
+
+### 內聚力  
+
+### 耦合力  
+
+<a name="SOLIDPrinciplesOOD"></a>
+## SOLID 物件導向設計原則  
++ 單一功能原則(Single Responsibility Principle)  
++ 開放封閉原則(Open-Closed Principle)  
++ 里氏替換原則(Liskov Substitution Principle)  
++ 介面隔離原則(Interface-Segregation Principles)  
++ 相依反轉原則(Dependency inversion Principle)
