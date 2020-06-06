@@ -76,6 +76,14 @@ SOLID Principles Of  Object-Oriented Design
 + 里氏替換原則(Liskov Substitution Principle)  
 + 介面隔離原則(Interface-Segregation Principles)  
 + 相依反轉原則(Dependency inversion Principle)
+### SOLID原則的好處
++ 降低程式碼複雜程度  
++ 程式碼具有較佳可讀性  
++ 提升程式碼的可重複利用性  
++ 讓模組有合理的高內聚力、低耦合力  
++ 面對變更需求時，可減少破壞現有模組的風險(改A壞B)  
+> + 依循SOLID原則，可寫出較好的Code  
+> + 依循SOLID原則，可判斷程式碼的好壞([Code Smell](https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%A0%81%E5%BC%82%E5%91%B3))  
 
 <a name="SRP"></a>
 ## 單一功能原則(SRP)
