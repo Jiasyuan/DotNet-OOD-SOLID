@@ -24,14 +24,50 @@ SOLID Principles Of  Object-Oriented Design
 + 多型(Polymorphism)
 	+ 在相同介面下，可用不同類別實現
 	+ 多型有分成多種不同類型
-	> 被抽象化的東西，可以有多樣表現  
-	
+	> 被抽象化的東西，可以有多樣表現   
+
+### 多型
++ 在設計時期(Design Time)
+	+ 基底類別可以定義和實作"虛擬"([virtual](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/virtual))屬性和方法
+	+ 衍生類別可以"覆寫"([override](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/override))屬性和方法  
++ 在執行時期(Runtime)
+	+ 當呼叫基底類別的虛擬方法時，會改呼叫子類別覆寫的方法
++ 在C#中，所有類型都是多型類型
+	+ 因為所有類型都是繼承[Object](https://docs.microsoft.com/zh-tw/dotnet/api/system.object?view=netcore-3.1)
 <a name="CohesionandCoupling"></a>
 ## 內聚力與耦合力    
+### 何謂模組(Module)  
+在C#中可能是  
++ 類別(Class)  
++ 方法(Method)  
++ 組件(Assembly)  
+### 內聚力(Cohesion)  
+一個模組內完成一件工作的度量指標  
++ 高內聚力
+	+ 一個模組只完成一件工作  
+	+ 內聚力高就代該模組可以獨立運作，也更容易重複利用
+	+ 例如:一個Class只負責一件事情(ex:寄送郵件)  
++ 低內聚力
+	+ 一個模組只完成多件工作  
+	+ 內聚力低就代表該模組難以維護/測試/重複利用/理解
++ 提高內聚力方式
+	+ 若要在一模組內完成多件工作，最好拆成多個不同類別  
+	+ 實踐[SRP](#SRP)
 
-### 內聚力  
+### 耦合力(Coupling)  
+模組與模組之間的關聯強度  
++ 模組之間互相依賴的程度
++ 衡量兩個模組的緊密程度  
++ 高耦合力
+	+ 修改模組A時，相關聯的模組B可能受影響
++ 低耦合力
+	+ 當模組修改時，越少的模組被影響就代表耦合力較低
++ 降低耦合力方式
+	+ 實踐[DIP](#DIP)  
+	+ 耦合是無可避免的  
 
-### 耦合力  
+> 理論上程式要高內聚，低耦合，但現實沒有那麼簡單    
+> 內聚力越高，類別越多，代表耦合越高  
 
 <a name="SOLIDPrinciplesOOD"></a>
 ## SOLID 物件導向設計原則  
