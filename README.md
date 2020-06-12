@@ -70,6 +70,8 @@ SOLID Principles Of  Object-Oriented Design
 > 內聚力越高，類別越多，代表耦合越高  
 
 <a name="SOLIDPrinciplesOOD"></a>
+## 什麼是原則
+A basic idea or rule that explains or controls how something happens or works
 ## SOLID 物件導向設計原則  
 + 單一功能原則(Single Responsibility Principle)  
 + 開放封閉原則(Open-Closed Principle)  
@@ -85,11 +87,72 @@ SOLID Principles Of  Object-Oriented Design
 > + 依循SOLID原則，可寫出較好的Code  
 > + 依循SOLID原則，可判斷程式碼的好壞([Code Smell](https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%A0%81%E5%BC%82%E5%91%B3))  
 
+使用SOLID原則  
+ + *原則須依據專案情況使用*  
+ + *夠不夠了解需求*  
+
 <a name="SRP"></a>
 ## 單一功能原則(SRP)
+A class should have only one reason to change  
+### SRP基本精神  
+一個類別可有太多reason to change時，代表該類別可被切割
++ 定義一個新類別，將部分程式碼分出去  
++ 對類別進行適度切割，方便日後管理與維護!  
+
+*SRP就是提高內聚力*  
+
+常見問題  
++ 將所有功能都寫在同一類別  
+	+ 類別複雜度過高  
+	+ 不容易找到問題點(bug)  
+	+ 不易維護  
+	+ 使用該類別時不知道該用哪個方法  
+
+SRP使用時機  
++ 類別中有一段Code有*重複利用*的需求
++ 多reason to change在不同時間點產生變更需求
+	+ 範例
++ 有非必要功能(未來需求)需要實作
+
+**SRP套用越多，耦合性越高**  
++ 不用急於第一時間就專注於分離責任
++ 尚未出現需求(未來需求)不需要預先分離責任
++ 當需求變更時，在分割
+
+**SRP最簡單也卻最難最好**
+
 
 <a name="OCP"></a>
 ## 開放封閉原則(OCP)  
+Softweare entities(Class, Module, Funtion, etc) should be *open for extension* but *close for modification*  
+> Curtis: 易於擴充，不利於修改  
+
+藉由新增程式碼來擴充系統功能，而不是修改已存在的程式碼來擴充系統功能   
+### OCP基本精神  
+一個Class需要開放，代表該類別可被擴充
++ 透過*繼承*可輕鬆做到  
++ C#還有*擴充方法*可以擴充既有Class  
+一個Class需要封閉，代表有其他人正在使用該class
++ 封閉修改可以有效避免未知問題發生  
++ 只有編譯後的結果，沒有Source Code  
+
+常見問題  
++ 耦合力過高，擴充不易  
+
+OCP實作方式
++ 採用分離與相依技巧(*相依於抽象*)  
+	+ 缺點:需針對原有的code進行重構  
+
+OCP使用時機  
++ 既有Class*已被清楚定義*，處於*強調穩定*的狀態  
++ *需擴充*現有Class，*加入新需求*的屬性和方法  
++ 擔心修改現有code會破壞現有系統的運作  
++ 系統剛開始設計時就決定採用OCP，可透過*介面*或*抽象類別*進行實作  
+
+**Interface vs Abstract**
++ Interface:不可包含實作，耦合度較低  
++ Abstract:可包含實作，耦合度較高  
+
 
 <a name="LSP"></a>
 ## 里氏替換原則(LSP)
