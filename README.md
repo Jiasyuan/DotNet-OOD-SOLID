@@ -12,6 +12,7 @@ SOLID Principles Of  Object-Oriented Design
 + [相依反轉原則(DIP)](#DIP)
 
 <a name="oop4pillars"></a>
+
 ## OOP 四個特性  
 + 抽象(Abstraction)	
 	+ 將真實世界的需求(物件)轉為程式中的類別
@@ -35,6 +36,7 @@ SOLID Principles Of  Object-Oriented Design
 + 在C#中，所有類型都是多型類型
 	+ 因為所有類型都是繼承[Object](https://docs.microsoft.com/zh-tw/dotnet/api/system.object?view=netcore-3.1)
 <a name="CohesionandCoupling"></a>
+
 ## 內聚力與耦合力    
 ### 何謂模組(Module)  
 在C#中可能是  
@@ -70,6 +72,7 @@ SOLID Principles Of  Object-Oriented Design
 > 內聚力越高，類別越多，代表耦合越高  
 
 <a name="SOLIDPrinciplesOOD"></a>
+
 ## 什麼是原則
 A basic idea or rule that explains or controls how something happens or works
 ## SOLID 物件導向設計原則  
@@ -92,6 +95,7 @@ A basic idea or rule that explains or controls how something happens or works
  + *夠不夠了解需求*  
 
 <a name="SRP"></a>
+
 ## 單一功能原則(SRP)
 A class should have only one reason to change  
 ### SRP基本精神  
@@ -123,11 +127,13 @@ SRP使用時機
 
 
 <a name="OCP"></a>
+
 ## 開放封閉原則(OCP)  
 Softweare entities(Class, Module, Funtion, etc) should be *open for extension* but *close for modification*  
 > Curtis: 易於擴充，不利於修改  
 
 藉由新增程式碼來擴充系統功能，而不是修改已存在的程式碼來擴充系統功能   
+
 ### OCP基本精神  
 一個Class需要開放，代表該類別可被擴充
 + 透過*繼承*可輕鬆做到  
@@ -155,10 +161,37 @@ OCP使用時機
 
 
 <a name="LSP"></a>
+
 ## 里氏替換原則(LSP)
+Subtypes *must* be *substitutable* for their *base* *types*.  
+
+子類別必須可以替換為他的基底類別  
+
+### LSP基本精神  
++ 當實作繼承時，必須確保型別轉換後還能得到正確的結果  
+	+ 每個*衍生類別*都可以正確替換為*基底類別*，且程式再執行時不會有異常  
+	+ 必須正確實作*繼承*與*多型*  
+
+常見問題  
++ 不正確實做*繼承*與*多型*  
++ 實作繼承時，在特定情況下發生Runtime Error  
++ 違反LSP有時候較難被發現  
+
+LSP實作方式  
++ 採用*類別繼承方式*來進行開發
+	+ 需注意繼承的實作方式  
++ 採用*合約設計方式*來進行開發
+	+ 利用*Iterface*來定義基底型別  
+
+LSP使用時機  
++ 當需要透過*基底型別*對*多型*物件進行操作時
+
+> 保哥:把Warring看完，很多問題都解決了，盡量讓Warring為0  
 
 <a name="ISP"></a>
+
 ## 介面隔離原則(ISP)  
 
 <a name="DIP"></a>
+
 ## 相依反轉原則(DIP)  
