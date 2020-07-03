@@ -191,6 +191,26 @@ LSP使用時機
 <a name="ISP"></a>
 
 ## 介面隔離原則(ISP)  
++ Many *client specific interfaces* are *batter than* one general purpose interface.  
+
++ Clients *should not* be *forced* to depend upon interface that they don't use.  
+
+針對不同的需求，僅開放其對應需求的介面就好  
+
+### ISP基本精神  
++ 不同需求的屬性與方法，放在不同介面中
+	+ 不要讓Interface包山包海  
+	+ 特定需求沒用到的方法，不要加到介面中  
+	+ 可以拿interface當成群組來用(屬性與方法)  
+
++ 使系統更易達成*鬆散耦合*、*安全重構*、*功能擴充*
+
+> 在實現ISP後，介面會變小、變多
+
+常見問題  
++ 將所有API需求都定義於一個超大介面中  
++ 相依於一堆用不到的介面方法  
+
 
 <a name="DIP"></a>
 
