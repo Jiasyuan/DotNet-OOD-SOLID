@@ -97,7 +97,7 @@ A basic idea or rule that explains or controls how something happens or works
 <a name="SRP"></a>
 
 ## 單一功能原則(SRP)
-A class should have only one reason to change  
+A class should have one, and only one, reason to change.    
 ### SRP基本精神  
 一個類別可有太多reason to change時，代表該類別可被切割
 + 定義一個新類別，將部分程式碼分出去  
@@ -215,3 +215,4 @@ LSP使用時機
 <a name="DIP"></a>
 
 ## 相依反轉原則(DIP)  
+High-level modules should not depend on low-level modules; both should depend on abstractions.
